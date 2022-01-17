@@ -8,12 +8,12 @@ app.get('/', (req, res) => {
     res.send('Hello Virtual Machine!')
 })
 
-app.get('/abbie', (req, res) => {
+app.post('/name', (req, res) => {
     var name = req.body.name;
     res.send('Hello' + name)
 })
 
-app.post('/name', (req, res) => {
+app.get('/abbie', (req, res) => {
     res.send('Getting a post request')
 })
 
