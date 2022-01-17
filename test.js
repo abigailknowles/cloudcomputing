@@ -9,10 +9,11 @@ app.get('/', (req, res) => {
 })
 
 app.get('/abbie', (req, res) => {
-    res.send('Hello Abbie!')
+    var name = req.body.name;
+    res.send('Hello' + name)
 })
 
-app.post('/post', (req, res) => {
+app.post('/name', (req, res) => {
     res.send('Getting a post request')
 })
 
