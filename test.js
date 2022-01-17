@@ -8,9 +8,10 @@ app.get('/', (req, res) => {
     res.send('Hello Virtual Machine!')
 })
 
-app.get('/abbie', (req, res) => {
-    res.send('Hello Abbie!')
+app.post('/post', (req, res) => {
+    res.send('This is a post request!')
 })
+
 app.listen(port, () => {
     console.log(`Express Application  listening at port 3000`)
 }) 
