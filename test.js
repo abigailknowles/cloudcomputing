@@ -13,6 +13,7 @@ app.get('/abbie', (req, res) => {
 
 app.post('/name', (req, res) => {
     var name = req.body.name;
+    console.log("Hello" + name)
     res.send('Hello' + name)
 })
 
